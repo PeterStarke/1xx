@@ -17,3 +17,10 @@ inside out project version 100.0
   - created assets/js/app.js
   - created assets/data/menu.json
   - moved hear resize js to app.js
+  
+   inside out project version 102.0
+  - completed menuBuilder function in app.js
+  - completed nav through menuBuilder function with recursion
+  
+   inside out project version 102.1
+   - completed css for navigation
