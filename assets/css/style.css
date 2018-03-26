@@ -75,3 +75,32 @@ nav ul ul ul {
 nav ul li:hover > ul {
      display: block
 }
+
+#loaderDiv {
+	background: url("https://90northgroup.com/wp-content/uploads/2017/02/cogs-1.gif") no-repeat center center fixed;
+	position: fixed;
+	z-index: 9999;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	opacity: 0.025;
+	background-size: 120%;
+	background-color: #FFFFFF;
+	display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
