@@ -57,7 +57,7 @@ $.ajax({
 		}
 	});
 	getPosts();
-}
+
 
 function menuBuilder(obj, elID, elClassName) {
 
@@ -81,7 +81,7 @@ function menuBuilder(obj, elID, elClassName) {
 		});
 		theMenu = theMenu + '</ul>';
 	} else {
-		console.log('no data')
+		console.log('all is not good')
 	}
 	return theMenu;
 
@@ -105,7 +105,7 @@ function getPage(obj) {
             $("#content").fadeOut(function() {
                 $('html').animate({
                     scrollTop: 0
-                }, 'slow'); //IE, FF
+                }, 'slow');
                 $('body').animate({
                     scrollTop: 0
                 }, 'slow'); 
@@ -114,7 +114,7 @@ function getPage(obj) {
             });
         },
         error: function() {
-            console.log('bad');
+            console.log('all in not good');
         }
     });
 }
@@ -142,7 +142,7 @@ function getPosts() {
 			});
 		},
 		error: function () {
-			console.log('bad');
+			console.log('all in not good');
 		}
 	});
 }
