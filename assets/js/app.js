@@ -43,54 +43,40 @@ $.ajax({
 		method: 'GET',
 		url: 'http://me.mrstarke.com/me/wp-json/wp-api-menus/v2/menus/3',
 		dataType: 'json',
-		success: function (data) {
-			var menu = menuBuilder(data.items, 'genLinks', 'footer-ul');
-			$('#genLinks').replaceWith(menu);
-			$('#genLinks li a').click(function () {
-				getPage($(this).data("pgid"));
-			});
-
-
-		},
-		error: function () {
-			console.log('all is not good');
-		}
-	});
-	getPosts();
-
-
-function menuBuilder(obj, elID, elClassName) {
-
-	var theMenu = '';
-
-	if (obj) {
-		var inElId = (elID !== undefined) ? ' id="' + elID + '"' : '';
-
-		var inLineClass = '';
-		if (elClassName !== undefined) {
-			inLineClass = ' class="' + elClassName + '"';
-
-		}
-		theMenu = theMenu + '<ul' + inElId + '' + inLineClass + '>';
-		obj.forEach(function (item) {
-			theMenu = theMenu + '<li><a href="#" data-pgid="' + item.object_id + '">' + item.title + '</a>';
-			if (item.children) {
-				theMenu = theMenu + menuBuilder(item.children);
-			}
-			theMenu = theMenu + '</li>';
-		});
-		theMenu = theMenu + '</ul>';
-	} else {
-		console.log('all is not good')
-	}
-	return theMenu;
-
+        success: function (data) {
+            var menu = menuBuilder(data.items, 'genLinks', 'footer-ul');
+            $('#genLinks').replaceWith(menu);
+            $('#genLinks li a').click(function () {
+                getPage($(this).data("pgid"));
+            });
+        },
+        error: function () {
+            console.log('all is not good');
+        }
+    });
+    
 }
 
-
-
-
-
+function menuBuilder(obj, targetEl, classInfo) {
+    var theMenu = '';
+    if (obj.length > 0) {
+        let target = (targetEl)?' id="'+targetEl+'"':'';
+        let elClass = (classInfo)?' class="'+classInfo+'"':'';
+        theMenu = theMenu + '<ul'+target+''+elClass+'>';
+        console.log(theMenu+' '+target);
+        obj.forEach(function (item) {
+            theMenu = theMenu + '<li><a href="#" data-pgid="' + item.object_id + '">' + item.title + '</a>';
+            if (item.children) {
+                theMenu = theMenu + menuBuilder(item.children);
+            }
+            theMenu = theMenu + '</li>';
+        });
+        theMenu = theMenu + '</ul>';
+    } else {
+        console.log('no data');
+    }
+    return theMenu;
+}
 
 
 function getPage(obj) {
@@ -105,7 +91,7 @@ function getPage(obj) {
             $("#content").fadeOut(function() {
                 $('html').animate({
                     scrollTop: 0
-                }, 'slow');
+                }, 'slow'); 
                 $('body').animate({
                     scrollTop: 0
                 }, 'slow'); 
@@ -114,35 +100,7 @@ function getPage(obj) {
             });
         },
         error: function() {
-            console.log('all in not good');
+            console.log('bad');
         }
     });
-}
-
-
-
-
-
-function getPosts() {
-	$("#footerPosts").html('<p id="postLdr"><i class="fa fa-cogs"></i> Loading Posts</p>');
-	$.ajax({
-		method: 'GET',
-		url: 'http://me.mrstarke.com/me/wp-json/wp/v2/posts?orderby=date&order=asc&per_page=5',
-		dataType: 'json',
-		success: function (data) {
-			console.log('inside success');
-			console.log(data);
-			$("#footerPosts").html('');
-			data.forEach(function (item) {
-				$("#footerPosts").append('<p>'+ item.title.rendered + item.date + item.time + ' <span>August 3,2015</span></p>');
-
-				console.log(item);
-				console.log(item.slug + ' - ' + item.date + ' - ' + item.title.rendered);
-
-			});
-		},
-		error: function () {
-			console.log('all in not good');
-		}
-	});
 }
