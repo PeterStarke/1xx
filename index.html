@@ -1,160 +1,117 @@
 <!doctype html>
 
-<!-- step 101.0 of the inside project -->
-
-<!-- https://1xx.mrstarke.com -->
-
 <html lang="en">
+
 <head>
-<meta charset="utf-8">
-<meta name="viewpoint" content="width=device-width, initial-scale=1">
-<title>inside out - HTML5 App</title>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-
-<!-- styles used for the header and body -->
-
-<link rel="stylesheet" href="assets/css/header-resize.css">
-
-<!-- styles used for the footer -->
-
-<link rel="stylesheet" href="assets/css/footer.css">
-	
-<!-- styles used for the footer -->
-
-<link rel="stylesheet" href="assets/css/style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>inside out - HTML5 App</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/header-resize.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
 </head>
 
- <body>
+<body>
     <div id="wrapper">
         <header>
             <div class="container clearfix">
-                <h1 id="logo"> inside out </h1>
-                <nav></nav>
+                <h1 id="logo" onClick="getPage(52)"> inside out </h1>
+                <nav>
+                </nav>
             </div>
         </header>
-        <!-- /header -->
-  
-  <div id="main">
-    <div id="content">
-      <section>
-        <div class="container">
-          <h1>White panel</h1>
-          <p>panel content</p>
-          <p>panel content</p>
-          <p>panel content</p>
-          <p>panel content</p>
-          <p>panel content</p>
-          <p>panel content</p>
-          <p>panel content</p>
-          <p>panel content</p>
-          <p>panel content</p>
-          <p>panel content</p>
-          <p>panel content</p>
-          <p>panel content</p>
-        </div>
-      </section>
-      <section class="color">
-        <div class="container">
-          <h1>Blue panel</h1>
-          <p>panel content</p>
-          <p>panel content</p>
-          <p>panel content</p>
-          <p>panel content</p>
-          <p>panel content</p>
-          <p>panel content</p>
-          <p>panel content</p>
-          <p>panel content</p>
-          <p>panel content</p>
-          <p>panel content</p>
-          <p>panel content</p>
-          <p>panel content</p>
-        </div>
-      </section>
-    </div>
-  </div>
-  <!-- #main -->
-  
-  <footer>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4 col-sm-6 footerleft ">
-          <div class="logofooter"> Logo</div>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.</p>
-          <p><i class="fa fa-map-pin"></i> 10, South 2nd Street </p>
-          <p>Reading, PA 19606</p>
-          <p><i class="fa fa-phone"></i> Phone : +0 610 555 3985</p>
-          <p><i class="fa fa-envelope"></i> E-mail : me@mysite.com</p>
-        </div>
-        <div class="col-md-2 col-sm-6 paddingtop-bottom">
-          <h6 class="heading7">GENERAL LINKS</h6>
-          <ul class="footer-ul">
-            <li><a href="#"> Career</a></li>
-            <li><a href="#"> Privacy Policy</a></li>
-            <li><a href="#"> Terms & Conditions</a></li>
-            <li><a href="#"> Client Gateway</a></li>
-            <li><a href="#"> Ranking</a></li>
-            <li><a href="#"> Case Studies</a></li>
-            <li><a href="#"> Frequently Ask Questions</a></li>
-          </ul>
-        </div>
-        <div class="col-md-3 col-sm-6 paddingtop-bottom">
-          <h6 class="heading7">LATEST POST</h6>
-          <div class="post">
-            <p>facebook crack the movie advertisment code:what it means for you <span>August 3,2015</span></p>
-            <p>facebook crack the movie advertisment code:what it means for you <span>August 3,2015</span></p>
-            <p>facebook crack the movie advertisment code:what it means for you <span>August 3,2015</span></p>
-          </div>
-        </div>
-        <div class="col-md-3 col-sm-6 paddingtop-bottom">
-          <div class="fb-page" data-href="https://www.facebook.com/facebook" data-tabs="timeline" data-height="300" data-small-header="false" style="margin-bottom:15px;" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
-            <div class="fb-xfbml-parse-ignore">
-              <blockquote cite="https://www.facebook.com/facebook"><a href="https://www.facebook.com/facebook">Facebook</a></blockquote>
+        <div id="main">
+            <div id="content">
+                <section>
+                    <div class="container">
+                        <div class="circle">
+                            <div class="wave">
+                            </div>
+                        </div>
+                    </div>
+                </section>
             </div>
-          </div>
         </div>
-      </div>
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-sm-6 footerleft ">
+                        <div class="logofooter">
+                            Logo
+                        </div>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.</p>
+                        <p><i class="fa fa-map-pin"></i> 10, South 2nd Street
+                            <br> Reading, PA 19606
+                            <br>
+                        </p>
+                        <p><i class="fa fa-phone"></i> Phone : +0 610 555 3985</p>
+                        <p><i class="fa fa-envelope"></i> E-mail : me@mysite.com</p>
+                    </div>
+                    <div class="col-md-2 col-sm-6 paddingtop-bottom">
+                        <h6 class="heading7">GENERAL LINKS</h6>
+                        <ul class="footer-ul">
+                            <li><a href="#"> Career</a></li>
+                            <li><a href="#"> Privacy Policy</a></li>
+                            <li><a href="#"> Terms & Conditions</a></li>
+                            <li><a href="#"> Client Gateway</a></li>
+                            <li><a href="#"> Ranking</a></li>
+                            <li><a href="#"> Case Studies</a></li>
+                            <li><a href="#"> Frequently Ask Questions</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-sm-6 paddingtop-bottom">
+                        <h6 class="heading7">LATEST POST</h6>
+                        <div class="post">
+                            <p>facebook crack the movie advertisment code:what it means for you <span>August 3,2015</span></p>
+                            <p>facebook crack the movie advertisment code:what it means for you <span>August 3,2015</span></p>
+                            <p>facebook crack the movie advertisment code:what it means for you <span>August 3,2015</span></p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 paddingtop-bottom">
+                        <div class="fb-page" data-href="https://www.facebook.com/facebook" data-tabs="timeline" data-height="300" data-small-header="false" style="margin-bottom:15px;" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+                            <div class="fb-xfbml-parse-ignore">
+                                <blockquote cite="https://www.facebook.com/facebook">
+                                    <a href="https://www.facebook.com/facebook">Facebook</a>
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <p>© 2018 - All Rights with me</p>
+                    </div>
+                    <div class="col-md-8">
+                        <ul class="bottom_ul">
+                            <li><a href="#">mysite.com</a></li>
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Faq's</a></li>
+                            <li><a href="#">Contact us</a></li>
+                            <li><a href="#">Site Map</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-  </footer>
-  <!--footer start from here-->
-  
-  <div class="copyright">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4">
-          <p>© 2018 - All Rights with me</p>
-        </div>
-        <div class="col-md-8">
-          <ul class="bottom_ul">
-            <li><a href="#">mysite.com</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Faq's</a></li>
-            <li><a href="#">Contact us</a></li>
-            <li><a href="#">Site Map</a></li>
-          </ul>
-        </div>
-      </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <script src="assets/js/header-resize.js"></script>
+    <script src="assets/js/app.js"></script>
+    <div id="loaderDiv">
     </div>
-  </div>
-  <!-- /footer --> 
-</div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script> 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
-	</script> 
-<script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script> 
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
-	</script> 
-
-<!-- js used fo the header and the body of the page --> 
-
-<script src="assets/js/header-resize.js"></script> 
-
-<!-- all Javascript used in the app that will come from the app.js file --> 
-
-<script src="assets/js/app.js">
-</script>
-<div id="loaderDiv"></div>
-<script>$("#loaderDiv").fadeIn("slow");</script>
+    <script>
+       $("#loaderDiv").fadeIn("slow");
+    </script>
 </body>
+
 </html>
